@@ -102,8 +102,9 @@ app.get(/^(?!\/api(\/|$))/, (req, res) => {
 });
 
 let server;
+console.log(DATABASE_URL, 'NONSENSE STRINGNONSENSE STRINGNONSENSE STRINGNONSENSE STRINGNONSENSE STRINGNONSENSE STRINGNONSENSE STRINGNONSENSE STRINGNONSENSE STRINGNONSENSE STRINGNONSENSE STRINGNONSENSE STRINGNONSENSE STRINGNONSENSE STRING');
 function runServer(databaseUrl = DATABASE_URL, port = 3001) {
-  console.log('lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum' + databaseUrl);
+  console.log('lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum' + databaseUrl, process.env);
   return new Promise((resolve, reject) => {
     mongoose.connect(databaseUrl, err => {
       if (err) {
