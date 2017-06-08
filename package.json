@@ -29,9 +29,9 @@
     "express": "^4.14.1",
     "http-proxy-middleware": "^0.17.3",
     "node-fetch": "^1.7.0",
+    "node-sass-chokidar": "0.0.2",
     "npm-run-all": "^4.0.1",
-    "xp": "^1.0.1",
-    "node-sass-chokidar": "0.0.2"
+    "xp": "^1.0.1"
   },
   "devDependencies": {
     "redux-logger": "^3.0.6"
